@@ -10,7 +10,7 @@ datagroup: gowri_2_default_datagroup {
 
 datagroup: gowri_2_test {
   max_cache_age: "5 minutes"
-  sql_trigger: Select MAX(net_cost_yesterday) from testing.panw-anomaly-details ;;
+  sql_trigger: Select MAX(net_cost_yesterday) from etl_log;;
 }
 persist_with: gowri_2_default_datagroup
 
