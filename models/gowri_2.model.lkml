@@ -27,4 +27,6 @@ explore: panwanomalydetails {
   persist_with: gowri_2_test
 }
 
-explore: day_cte {}
+explore: day_cte {
+  persist_with: gowri_2_test3
+}
