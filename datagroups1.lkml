@@ -5,10 +5,10 @@ datagroup: gowri_2_test {
 
 datagroup: gowri_2_tset2 {
   max_cache_age: "5 minutes"
-  sql_trigger: SELECT TIME(NOW()) ;;
+  sql_trigger: SELECT EXTRACT(SECOND FROM CURRENT_TIMESTAMP());;
 }
 
 datagroup: gowri_2_test3 {
   max_cache_age: "10 minutes"
-  sql_trigger:SELECT EXTRACT(SECOND FROM CURRENT_TIMESTAMP()) ;;
+  sql_trigger: SELECT EXTRACT(MINUTE FROM CURRENT_TIMESTAMP());;
 }
