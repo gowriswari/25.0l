@@ -15,7 +15,9 @@ explore: cost_anomaly_alerting {}
 
 explore: month_cte {}
 
-explore: csvtest {}
+explore: csvtest {
+  persist_with: gowri_2_tset2
+}
 
 explore: year_cte {}
 
