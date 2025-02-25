@@ -6,12 +6,14 @@ include: "/datagroups1.lkml"
 
 datagroup: gowri_2_default_datagroup {
  #sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "5 minutes"
+  max_cache_age: "2 minutes"
 }
 
 persist_with: gowri_2_default_datagroup
 
-explore: cost_anomaly_alerting {}
+explore: cost_anomaly_alerting {
+  persist_with: gowri_2_default_datagroup
+}
 
 explore: month_cte {}
 
